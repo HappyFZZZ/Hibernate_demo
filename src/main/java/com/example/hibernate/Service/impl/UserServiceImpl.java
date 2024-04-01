@@ -18,5 +18,10 @@ public class UserServiceImpl implements UserService {
         return userDao.findAll();
     }
 
+    @Override
+    public User selectOne(Integer id) {
+        return userDao.getOne(id);
+    }
+
 
 }
